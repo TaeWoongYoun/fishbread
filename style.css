@@ -4,6 +4,10 @@
     padding: 0%;
 }
 
+li{
+    list-style: none;
+}
+
 main{
     display: flex;
     align-items: center;
@@ -46,15 +50,16 @@ header{
 .modalBox{
     position: fixed;
     width: 1000px;
-    height: 500px;
+    height: 600px;
     background-color: aliceblue;
     left: 0%;
     right: 0%;
     margin: auto;
-    top: 15%;
+    top: 10%;
     border:  3px solid black;
     border-radius: 15px;
     display: none;
+    text-align: center;
 }
 
 .closeBtn{
@@ -78,4 +83,28 @@ input#modal:checked~.modalBox{
 
 input[type=checkbox]{
     display: none;
+}
+
+.modalBox > button{
+    width: 180px;
+    height: 170px;  
+    margin-top: 25px;
+    margin-right: 10px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+.modalBox > button > img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.modalBox img{
+    display: flex;
+    width: 100px;
+    height: 100px;
+    margin-left: 40px;
 }
